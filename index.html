@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Ambiental</title>
+    
+    <!-- Enlazar el archivo de estilos CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <!-- Enlazar Leaflet.js para mapas -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" defer></script>
+    
+    <!-- Enlazar Chart.js para gráficos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="javascript\script.js" defer></script>
+</head>
+<body>
+
+    <!-- Menú interactivo -->
+    <header>
+        <h1>Bienvenidos al Desafío de la Tierra Conectada</h1>
+        <nav>
+            <ul>
+                <li><a href="#simulacion">Simulación Causa y Efecto</a></li>
+                <li><a href="#mapa-incendios">Mapa Interactivo de Incendios</a></li>
+                <li><a href="#visualizacion-temporal">Visualizaciones Temporales</a></li>
+                <li><a href="#informacion">Información Ambiental</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Simulación -->
+    <main>
+        <section id="simulacion">
+            <h2>Simulación: Causa y Efecto de Incendios Forestales</h2>
+            <div class="slider-container">
+                <label for="temperatura">Temperatura (°C): 
+                    <span id="temp_value">25</span>
+                </label>
+                <input type="range" id="temperatura" min="10" max="50" value="25" oninput="actualizarValores()">
+            </div>
+            <button onclick="simularImpacto()">Simular Impacto</button>
+            <div id="resultado-simulacion">
+                <!-- Resultados de la simulación aparecerán aquí -->
+            </div>
+        </section>
+
+        <!-- Mapa interactivo de incendios -->
+        <section id="mapa-incendios">
+            <h2>Mapa Interactivo de Incendios</h2>
+            <div id="map-incendios" style="height: 500px;"></div>
+        </section>
+
+        <!-- Gráfico de visualización temporal -->
+        <section id="visualizacion-temporal">
+            <h2>Impacto de los Incendios a lo Largo del Tiempo</h2>
+            <canvas id="graficoImpacto"></canvas>
+        </section>
+
+        <!-- Información sobre el impacto ambiental -->
+        <section id="informacion">
+            <h2>Impacto Ambiental en los Últimos 5 Años</h2>
+            <ul>
+                <li>Sequías: Aumento del 30% en zonas áridas</li>
+                <li>Calidad del aire: Pérdida significativa de pureza</li>
+                <li>Temperaturas: Aumento promedio de 2°C en todo el mundo</li>
+                <!-- Más información -->
+            </ul>
+        </section>
+    </main>
+
+    
+</body>
+</html>
