@@ -4,35 +4,80 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    margin-top: 60px;
+    padding-top: 60px;
 }
 
 /* Estilo del menú de navegación */
 header {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 0;
+    
+    padding-left: 40px;
     text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
 }
-
-nav ul {
-    list-style: none;
-    padding: 0;
+.nav-links {
+    margin-right: auto; /* Push everything else to the right */
 }
-
-nav ul li {
-    display: inline-block;
-    margin-right: 15px;
-}
-
-nav ul li a {
+.nav-links a {
     color: white;
-    text-decoration: none;
-    font-weight: bold;
+    background-color: #3f9a42; /* Background color for the button */
+    padding: 10px 20px;      /* Padding to make the links look like buttons */
+    text-decoration: none;   /* Remove the underline */
+    border-radius: 5px;      /* Rounded corners */
+    margin: 0 10px;          /* Space between buttons */
+
+    display: inline-block;   /* Ensure the links are treated as block-level buttons */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+.nav-links a:hover {
+    background-color: #2a7a2d;  /* Change background color on hover */
 }
+
+.header-buttons button {
+    display: flex;
+    flex-direction: column; /* Stack user-info and buttons vertically */
+    align-items: flex-end;  /* Align content to the right */
+    margin-right: 100px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Space between user info and buttons */
+}
+.user-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.username {
+    color: white;
+    padding-right: 50px;
+}
+.button-group button {
+    padding: 8px 16px;
+    margin-top: 5px;
+    margin-left: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.button-group button:hover {
+    background-color: #ff6659;
+}
+
 
 /* Sección */
 section {
@@ -47,7 +92,6 @@ h2 {
     color: #333;
 }
 
-/* Estilos para los controles deslizantes */
 .slider-container {
     margin: 15px 0;
 }
@@ -56,12 +100,10 @@ input[type="range"] {
     width: 100%;
 }
 
-/* Mapa interactivo */
 #map-incendios {
     height: 500px;
 }
 
-/* Gráfico */
 #graficoImpacto {
     max-width: 600px;
     margin: 0 auto;
