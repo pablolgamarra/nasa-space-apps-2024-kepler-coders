@@ -59,10 +59,10 @@ function selectAnswer(selectedIndex) {
     const questionData = questionBank[currentQuestionIndex];
     if (selectedIndex === questionData.correct) {
         correctAnswers++;
-        alert("Correct!");
+        alert("Respuesta correcta!!");
     } else {
         incorrectAnswers++;
-        alert("Wrong!");
+        alert("Respuesta Incorrecta");
     }
     
     // Disable buttons after selecting an answer
@@ -95,7 +95,7 @@ function loadNextQuestion() {
         document.getElementById("context-box").style.display = "block";
         loadContextAndFact();
     } else {
-        alert(`Game Over! You got ${correctAnswers} correct and ${incorrectAnswers} wrong.`);
+        alert(`se termino, tuviste ${correctAnswers} respuestas correctas y ${incorrectAnswers} respuestas incorrectas.`);
         resetGame(); // Optional: Reset game or handle end state
     }
 }
