@@ -15,7 +15,6 @@ const Landing: React.FC = () => {
 			<footer>
 				<p>© 2024 Tu Proyecto</p>
 			</footer>
-			w
 		</div>
 	);
 };
