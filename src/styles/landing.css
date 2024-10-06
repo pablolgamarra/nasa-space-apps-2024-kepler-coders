@@ -1,0 +1,52 @@
+.landing-page {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f0f0f0;
+	text-align: center;
+}
+
+h1 {
+	font-size: 2.5rem;
+	color: #0078d4;
+}
+
+p {
+	font-size: 1.2rem;
+	color: #333;
+}
+
+.progress-bar {
+	width: 80%;
+	background-color: #e0e0e0;
+	margin: 20px 0;
+	height: 10px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.progress {
+	width: 50%;
+	height: 100%;
+	background-color: #0078d4;
+	animation: loading 2s ease-in-out infinite;
+}
+
+@keyframes loading {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+footer {
+	margin-top: 30px;
+}
+
+footer p {
+	color: #666;
+}

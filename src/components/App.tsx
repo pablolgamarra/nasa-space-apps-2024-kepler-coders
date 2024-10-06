@@ -1,7 +1,10 @@
+import React from 'react';
+import LandingPage from './Landing';
+
 const App: React.FC = () => {
 	return (
 		<>
-			<h1>Hello World</h1>
+			<LandingPage></LandingPage>
 		</>
 	);
 };
