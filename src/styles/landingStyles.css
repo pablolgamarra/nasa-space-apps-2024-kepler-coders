@@ -1,0 +1,139 @@
+/* Basic Styles */
+body,
+html {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	color: #333;
+}
+
+/* Hero Section */
+.hero {
+	background-image: url('/images/hero-background.jpg'); /* Puedes añadir una imagen representativa */
+	background-size: cover;
+	color: white;
+	text-align: center;
+	padding: 100px 20px;
+}
+
+.hero h1 {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.hero p {
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+
+.btn-primary {
+	background-color: #1e90ff;
+	color: white;
+	padding: 15px 30px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.btn-primary:hover {
+	background-color: #1c86ee;
+}
+
+/* Features Section */
+.features {
+	padding: 50px 20px;
+	background-color: #f9f9f9;
+}
+
+.features h2 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.feature-grid {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.feature-item {
+	width: 30%;
+	background-color: white;
+	padding: 20px;
+	margin: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+
+.feature-item h3 {
+	margin-bottom: 15px;
+}
+
+.feature-item p {
+	font-size: 16px;
+}
+
+/* Call-to-action Section */
+.cta {
+	text-align: center;
+	padding: 50px 20px;
+	background-color: #1e90ff;
+	color: white;
+}
+
+.cta h2 {
+	margin-bottom: 20px;
+	font-size: 32px;
+}
+
+.btn-secondary {
+	background-color: white;
+	color: #1e90ff;
+	padding: 15px 30px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.btn-secondary:hover {
+	background-color: #f1f1f1;
+}
+
+/* Testimonials Section */
+.testimonials {
+	padding: 50px 20px;
+	background-color: #f9f9f9;
+}
+
+.testimonials h2 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.testimonial-grid {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.testimonial-item {
+	width: 45%;
+	background-color: white;
+	padding: 20px;
+	margin: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	font-style: italic;
+}
+
+/* Footer Section */
+.footer {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.footer p {
+	margin: 5px 0;
+}

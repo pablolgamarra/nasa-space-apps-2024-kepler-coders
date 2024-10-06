@@ -1,0 +1,44 @@
+
+.selection-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.selection-container h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #333;
+}
+
+.button-group-selection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.action-button {
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+.disabled-button {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.disabled-button:hover {
+    background-color: #6c757d;
+}

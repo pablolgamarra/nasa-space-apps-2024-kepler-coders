@@ -1,10 +1,10 @@
 import React from 'react';
-import LandingPage from './Landing';
+import LandingPage from './LandingPage';
 
 const App: React.FC = () => {
 	return (
 		<>
-			<LandingPage></LandingPage>
+			<LandingPage />
 		</>
 	);
 };

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src\styles\style_index.css">
+    <link rel="stylesheet" href="src\styles\style_minigame_Q&A.css">
+    <script src="javascript\script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Bienvenidos al Desafío de la Tierra Conectada</h1>
+            <nav class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="creating_game.html">Mini games</a>
+                <a href="Mini_games.html">Preguntas y respuestas</a>
+                <a href="history.html">Biblioteca</a>
+            </nav>
+        </div>
+        <div class="header-buttons">
+            <div class="user-info">
+                <img src="https://via.placeholder.com/40" alt="User Icon" class="user-icon">
+                <span class="username">Teachers-name or guest</span>
+            </div>
+            <div class="button-group">
+                <button>Login/Sign Up</button>
+                <button>guest mode</button>
+            </div>
+        </div>
+
+        
+    </header>
+    <main class="game-container">
+        <!-- Fact box on the left side -->
+        <div class="fact-box">
+            <h3>Sabias que?</h3>
+            <p id="fact-text">Interesting fact or theme information will go here!</p>
+        </div>
+
+        <!-- Context/Information section -->
+        <div class="context-box" id="context-box">
+            <h2 class="context-text" id="context">Context information here</h2>
+            <button class="next-question" onclick="showQuestion()">Mostrar presguntas</button>
+        </div>
+
+        <!-- Question and answer section (initially hidden) -->
+        <div class="question-box" id="question-box" style="display: none;">
+            <!-- New event title above the question -->
+            <h2 class="question-text" id="question">Question text here</h2>
+            <div class="answer-options">
+                <button class="answer" id="option1" onclick="selectAnswer(0)">Answer 1</button>
+                <button class="answer" id="option2" onclick="selectAnswer(1)">Answer 2</button>
+            </div>
+        </div>
+
+        <!-- Next Question Button -->
+        <div class="next-question-container" id="next-button-container" style="display: none;">
+            <button class="next-question" onclick="loadNextQuestion()">Siguiente pregunta</button>
+        </div>
+    </main>
+    
+    <script src="src\scripts\Questions_anwsers_script.js"></script>
+</body>
+</html>
