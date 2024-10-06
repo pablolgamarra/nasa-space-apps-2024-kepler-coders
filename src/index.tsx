@@ -1,6 +1,7 @@
 import { createRoot } from 'react-dom/client';
 import App from './components/App';
+import React from 'react';
 
-const root = createRoot(document.getElementById('story-Telling') as Element);
+const root = createRoot(document.getElementById('root') as Element);
 
-root.render(<App />);
+root.render(React.createElement(App));
