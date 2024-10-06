@@ -1,5 +1,5 @@
 import React from 'react';
-import LandingPage from './LandingPage';
+import LandingPage from './Landing';
 
 const App: React.FC = () => {
 	return (
