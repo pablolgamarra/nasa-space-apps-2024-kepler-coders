@@ -1,0 +1,128 @@
+
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+.game-container {
+    display: flex;
+    margin: 50px 20px;
+    padding-top: 100px; /* Space for the fixed header */
+}
+
+/* Fact Box Styling */
+.fact-box {
+    width: 200px;
+    background-color: #f7f7f7;
+    border: 2px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    position: fixed;
+    left: 20px;
+    top: 150px; /* Leave space for the header */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fact-box h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.fact-box p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Main content styling */
+.context-box,
+.question-box {
+    margin-left: 400px; /* Offset the main content because of the fact box */
+}
+
+.context-text,
+.question-text {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    margin-left: 20px;
+}
+
+.answer-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.answer {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.answer:hover {
+    background-color: #0056b3;
+}
+
+.next-question-container {
+    margin-top: 20px;
+}
+
+.next-question {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.next-question:hover {
+    background-color: #218838;
+}
+@keyframes correct-answer {
+    0% { background-color: #28a745; }
+    50% { background-color: #4caf50; }
+    100% { background-color: #28a745; }
+}
+
+/* Wrong answer animation */
+@keyframes wrong-answer {
+    0% { background-color: #dc3545; }
+    50% { background-color: #ff4d4d; }
+    100% { background-color: #dc3545; }
+}
+
+/* Correct answer class */
+.correct {
+    animation: correct-answer 0.5s ease-in-out;
+    border-color: #28a745;
+}
+
+/* Wrong answer class */
+.wrong {
+    animation: wrong-answer 0.5s ease-in-out;
+    border-color: #dc3545;
+}
