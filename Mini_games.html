@@ -13,10 +13,10 @@
         <div>
             <h1>Bienvenidos al Desafío de la Tierra Conectada</h1>
             <nav class="nav-links">
-                <a href="index.html">Home</a>
+                <a href="index.html">Inicio</a>
                 <a href="creating_game.html">Mini games</a>
-                <a href="Mini_games.html">Services</a>
-                <a href="history.html">Contact</a>
+                <a href="Mini_games.html">Preguntas y respuestas</a>
+                <a href="history.html">Biblioteca</a>
             </nav>
         </div>
         <div class="header-buttons">
@@ -33,18 +33,31 @@
         
     </header>
     <main class="game-container">
-        <div class="question-box">
+        <!-- Fact box on the left side -->
+        <div class="fact-box">
+            <h3>Sabias que?</h3>
+            <p id="fact-text">Interesting fact or theme information will go here!</p>
+        </div>
+
+        <!-- Context/Information section -->
+        <div class="context-box" id="context-box">
+            <h2 class="context-text" id="context">Context information here</h2>
+            <button class="next-question" onclick="showQuestion()">Mostrar presguntas</button>
+        </div>
+
+        <!-- Question and answer section (initially hidden) -->
+        <div class="question-box" id="question-box" style="display: none;">
+            <!-- New event title above the question -->
             <h2 class="question-text" id="question">Question text here</h2>
             <div class="answer-options">
                 <button class="answer" id="option1" onclick="selectAnswer(0)">Answer 1</button>
                 <button class="answer" id="option2" onclick="selectAnswer(1)">Answer 2</button>
-                <button class="answer" id="option3" onclick="selectAnswer(2)">Answer 3</button>
-                <button class="answer" id="option4" onclick="selectAnswer(3)">Answer 4</button>
             </div>
         </div>
 
-        <div class="next-question-container">
-            <button class="next-question" onclick="loadNextQuestion()">Next Question</button>
+        <!-- Next Question Button -->
+        <div class="next-question-container" id="next-button-container" style="display: none;">
+            <button class="next-question" onclick="loadNextQuestion()">Siguiente pregunta</button>
         </div>
     </main>
     
