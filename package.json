@@ -2,7 +2,6 @@
 	"name": "nasa-space-apps-2024-kepler-coders",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.tsx",
 	"engines": {
 		"node": "20"
 	},
