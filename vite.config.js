@@ -8,5 +8,9 @@ export default defineConfig(() => {
 			sourcemap: true,
 		},
 		plugins: [react()],
+		server: {
+			open: true, // Esto es opcional, para que abra automáticamente el navegador al iniciar el servidor
+		},
+		base: '/',
 	};
 });
